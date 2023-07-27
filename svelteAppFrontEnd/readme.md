@@ -37,7 +37,7 @@ Gli esempi sono già configurati in modo da aver abilitata questa funzionalità.
 
 In primo luogo è necessario avviare sia il back-end in Spring che quello in FastAPI (opzionalmente lo stream socket) e solo successivamente Svelte (vedi come nelle prossime righe).
 Nel caso in cui Svelte non riuscirà a comunicare col back-end verrà mostrato un elenco di 4 persone (2 maschi e 2 femmine), nel caso invece stia comunicando col back-end in Spring scaricherà i nominativi di 4 uomini, se sta comunicando con FastAPI scaricherà i nominativi di 5 donne (se invece sta comunicando col server socket in python scaricherà l'elendo di alcuni giocatori della SSC NAPOLI).
-Per impostare che il back-end con qual quale Svelte deve comunicare basta recarsi nel file [App.svelte](./svelteAppFrontEnd/src/App.svelte) e alla riga
+Per impostare che il back-end con qual quale Svelte deve comunicare basta recarsi nel file [App.svelte](./src/App.svelte) e alla riga
 
 ```javascript
 const response = await fetch('http://localhost:3000/api/people');
